@@ -43,9 +43,9 @@
 	                            </div>
 	                        </form>
 	                        <div class="mt-3">
-	                                <label for="hashedPass" class="form-label"><span class="text-muted">Your Hashed Password:</span></label>
-	                                <textarea class="form-control" id="hashedPass" rows="2"><?php if(!empty($hashed)) { echo $hashed; } ?></textarea>
-	                            </div>
+								<label for="hashedPass" class="form-label"><span class="text-muted">Your Hashed Password:</span></label>
+								<textarea class="form-control" id="hashedPass" rows="2"><?php if(!empty($hashed)) { echo $hashed; } ?></textarea>
+	                        </div>
 						</div>
 	            	</div>
 				</div>
