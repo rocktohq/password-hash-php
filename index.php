@@ -1,6 +1,8 @@
 <?php
 	
-
+	$input = "";
+	$hashed = "";
+	
 	if(isset($_GET['hash'])) {
 		$input = $_GET['inputPass'];
 
@@ -36,7 +38,7 @@
 	                            	<?php if(!empty($error)) {
 	                            	 echo "<h5 class='text-center text-danger'>{$error}</h5>"; } ?>
 	                                <label for="inputPass" class="form-label"><span class="text-muted">Type Your Password:</span></label>
-	                                <textarea class="form-control" name="inputPass" id="inputPass" rows="2"></textarea>
+	                                <textarea class="form-control" name="inputPass" id="inputPass" rows="2"><?php echo $input; ?></textarea>
 	                            </div>
 	                            <div class="form-floating mt-3">
 	                                <button class="btn btn-success" name="hash">Create Hash</button>
@@ -44,7 +46,7 @@
 	                        </form>
 	                        <div class="mt-3">
 								<label for="hashedPass" class="form-label"><span class="text-muted">Your Hashed Password:</span></label>
-								<textarea class="form-control" id="hashedPass" rows="2"><?php if(!empty($hashed)) { echo $hashed; } ?></textarea>
+								<textarea class="form-control" id="hashedPass" rows="2"><?php echo $hashed; ?></textarea>
 	                        </div>
 						</div>
 	            	</div>
